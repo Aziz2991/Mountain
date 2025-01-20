@@ -1,0 +1,241 @@
+
+*{margin:0;
+padding:0;
+box-sizing: border-box;}
+
+header {Width:100%;
+height: 100vh;
+background-image: url(./Assets/img/header-bg.png);
+background-position: bottom;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: flex-end;}
+
+a {text-decoration: none;}
+
+.header-content {margin-bottom:150px;
+color:white;
+text-align: center;}
+
+.header-content h2 {font-size: 30px;}
+
+.line {width: 150px;
+height: 4px;
+background:lightcoral ;
+margin: 10px auto;
+border-radius: 4px;}
+
+.header-content h1 {font-size: 40px;
+margin-top:50px;
+margin-bottom: 30px;}
+
+.ctn {padding:8px 15px;
+background: palevioletred;
+border-radius:30px;
+color:whitesmoke;
+font-size: 20px;}
+
+
+.navbar {display: flex;
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+justify-content: space-between;
+padding:20px;
+color:whitesmoke;}
+
+.active {background-color: red;
+text-decoration: underline;
+font-weight: bold;
+border-radius: 10px; 
+padding:0 5px;}
+
+.nav-links {list-style: none;
+display: flex;
+align-items: center;}
+
+.mobile-menu {margin-top:0px;}
+
+.nav-links li {padding:0 30px;}
+
+.nav-links a{color:whitesmoke; 
+font-weight: bold;
+font-size: 20px;}
+
+.navbar .logo {font-size: 25px;
+color:whitesmoke;}
+
+section { width: 80%;
+margin: 80px auto;
+}
+
+.title {
+font-size: 40px;
+text-align: center;}
+
+.events .row  .col img {width:80%;}
+
+.row {display:flex;
+align-items: center; 
+width: 100%;
+justify-content: space-between;
+}
+
+.row .col {display: flex;
+flex-direction: column;
+align-items: center;}
+.events .row {margin-top: 50px;}
+h4 {font-size: 30px;
+color:blueviolet;
+margin:20px auto;}
+
+p {padding:0px 40px;
+color:blueviolet;}
+
+.events .ctn {margin-top: 30px;}
+
+.explore {width:100%;
+height: 100vh;
+background-image: url(./Assets/img/bg2.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;}
+
+.explore-content {width: 60%;
+padding:50px;
+color:whitesmoke;
+display: flex;
+align-items: center;
+flex-direction: column;}
+.explore-content h1 {font-size: 50px;
+}
+.explore-content .line {margin-bottom: 50px;}
+ 
+.explore-content p {color:whitesmoke;}
+.explore-content .ctn {margin-top:40px;}
+
+.content-col {width: 40%;}
+
+.image-col {width: 60%;}
+
+.tours .image-gallery {display: flex;
+flex-wrap: wrap;
+align-items: center;}
+
+.image-gallery img {width: 300px;
+margin:10px;}
+.content-col h1 {font-size: 50px;
+color:#484872;}
+
+.content-col .line {margin:auto;}
+
+.content-col p {padding:0;
+margin:30px auto;}
+
+.content-col .ctn {margin-left: -100px;}
+
+.footer {width: 100%;
+min-height: 100px;
+padding:20px 80px;
+margin: 0;
+background:#484872;
+text-align: center;}
+.footer p {color: whitesmoke;
+margin:20px auto;
+padding:20px auto;}
+
+.footer {padding:10px;}
+
+/*animation*/
+img {transition: .5s ease;}
+
+img:hover {transform: scale(1.1);}
+ .ctn:hover {background-color: whitesmoke;
+color:#fc036b;
+box-shadow: 5px 5px 20px black;}
+
+
+
+
+
+
+
+
+/*media -query*/
+
+@media only screen and (max-width:850px)
+
+{
+    .navbar {padding:0;}
+
+    .menu-btn {}
+
+    .logo {position: absolute;
+    top:30px;
+left:30px;}
+
+.nav-links {flex-direction: column;
+width:100%;
+height: 100vh;
+justify-content: center;
+background-color:slateblue;
+}
+}
+
+.nav-links li {margin:30px auto;}
+
+@media only screen and (max-width:400px)
+{
+    .nav-links {
+    padding:2px 0px;}
+}
+
+@media only screen and (max-width:500px)
+{
+    .events .row {flex-direction: column;}
+    .events .upcoming {font-size: 30px;}
+}
+
+@media only screen and (max-width:650px)
+{
+    .explore-content{margin-left:50px;}
+    .explore-content p {width:244px;height: 234px;}
+    .explore-content h1 {font-size: 30px;}
+    .explore {height: 120vh;}
+    .explore-content .line {margin-left:-70px;}
+    .explore-content a.ctn{width: 124px;
+    height: 40px;margin-top:10px;font-size: 15px;text-align: center;
+margin-left: -20px;}
+}
+
+@media only screen and (max-width:1100px)
+{
+    .tours .row {flex-direction: column;}
+    .tours .row p {width:244px;height: 118px;
+    
+padding-right: 20px;}
+.content-col .ctn {margin-left:-100px;}
+}
+
+@media only screen and (max-width:426px)
+{
+    .tours .row  h1{font-size: 25px;}
+    .content-col .line {margin-left:-40px;}
+    
+}
+
+@media only screen and (max-width:800px)
+{
+
+    .tours .row p {margin-left:-60px;}
+
+
+}
+
+@media only screen and (max-width:635px)
+{
+    
